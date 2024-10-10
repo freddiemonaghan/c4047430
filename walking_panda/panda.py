@@ -5,7 +5,7 @@ from direct.showbase.ShowBase import ShowBase
 from direct.task import Task
 from direct.actor.Actor import Actor
 
-class WalkingPanda(ShowBase):
+class WalkingPanda(ShowBas):
     def __init__(self, no_rotate=False):
         ShowBase.__init__(self)
 
