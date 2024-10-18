@@ -5,3 +5,7 @@ Newcastle University.
 
 Full ownership of copyright is mine, Newcastle University and the Panda3D developers (Carnegie Mellon University).
 
+From YouTube, been given permission to use this in the description.
+
+https://www.youtube.com/watch?v=Hmm9SiU4xR8
+
