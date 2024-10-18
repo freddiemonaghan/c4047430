@@ -1,1 +1,3 @@
 panda3d
+
+pygame~=2.6.1

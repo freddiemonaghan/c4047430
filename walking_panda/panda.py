@@ -5,9 +5,18 @@ from direct import task
 from direct.showbase.ShowBase import ShowBase
 from direct.task import Task
 from direct.actor.Actor import Actor
+import pygame
 
 class WalkingPanda(ShowBase):
     def __init__(self, no_rotate=False, panda_scale=0.05, camera_distance=20, rotation_speed=6):
+
+
+        pygame.mixer.init()
+        pygame.mixer.music.load('/Users/freddie/Downloads/Panda Sound [ ezmp3.cc ].mp3')
+
+        while pygame.mixer.music.get_busy():  # wait for music to finish playing
+            continue
+
         ShowBase.__init__(self)
         # Load the environment model.
         self.no_rotate = no_rotate
@@ -35,6 +44,8 @@ class WalkingPanda(ShowBase):
         self.pandaActor.reparentTo(self.render)
         # Loop its animation.
         self.pandaActor.loop("walk")
+
+        pygame.mixer.music.play()
 
     # Define a procedure to move the camera.
     def spinCameraTask(self, task):
